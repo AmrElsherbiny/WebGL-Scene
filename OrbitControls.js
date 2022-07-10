@@ -6,7 +6,7 @@ import {
   TOUCH,
   Vector2,
   Vector3
-} from "/three.js";
+} from "https://amrelsherbiny.github.io/WebGL-Scene/three.js";
 //"/-/three@v0.129.0-chk6X8RSBl37CcZQlxof/dist=es2020,mode=imports/optimized/three.js";
 const _changeEvent = {type: "change"};
 const _startEvent = {type: "start"};
