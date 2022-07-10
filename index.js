@@ -259,7 +259,7 @@ function main() {
   // Object model - "boat.glb"
   let boat = [];
   const loader = new GLTFLoader();
-  loader.load('https://amrelsherbiny.github.io/WebGL-Scene/boat.glb',(gltf)=>{
+  loader.load('https://amrelsherbiny.github.io/WebGL-Scene/Boat.glb',(gltf)=>{
     const boatMesh = gltf.scene.children.find((child) => child.name === "Boat");
     boatMesh.scale.set(boatMesh.scale.x * 40, boatMesh.scale.y * 40, boatMesh.scale.z * 40);
     boatMesh.position.y = -8;
@@ -307,7 +307,7 @@ function main() {
   let mixer;
   let bird = [];
   const loader3 = new GLTFLoader();
-  loader3.load('https://amrelsherbiny.github.io/WebGL-Scene/parrot.glb',(gltf)=>{
+  loader3.load('https://amrelsherbiny.github.io/WebGL-Scene/Parrot.glb',(gltf)=>{
     const birdMesh = gltf.scene.children.find((child) => child.name === "mesh_0");
     birdMesh.scale.set(birdMesh.scale.x * 0.2, birdMesh.scale.y * 0.2, birdMesh.scale.z * 0.2);
     birdMesh.position.y = 120;
