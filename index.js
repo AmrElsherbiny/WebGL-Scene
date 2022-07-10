@@ -276,7 +276,7 @@ function main() {
 
   // Object model - "lighthouse.glb"
   const loader2 = new GLTFLoader();
-  loader2.load('https://amrelsherbiny.github.io/WebGL-Scene/three.js/lighthouse.glb',(gltf)=>{
+  loader2.load('https://amrelsherbiny.github.io/WebGL-Scene/lighthouse.glb',(gltf)=>{
     gltf.scene.children.forEach(c => {
       c.position.set(c.position.x * 12, c.position.y * 12, c.position.z * 12);
       c.scale.set(c.scale.x * 12, c.scale.y * 12, c.scale.z * 12);
@@ -307,7 +307,7 @@ function main() {
   let mixer;
   let bird = [];
   const loader3 = new GLTFLoader();
-  loader3.load('https://amrelsherbiny.github.io/WebGL-Scene/three.js/parrot.glb',(gltf)=>{
+  loader3.load('https://amrelsherbiny.github.io/WebGL-Scene/parrot.glb',(gltf)=>{
     const birdMesh = gltf.scene.children.find((child) => child.name === "mesh_0");
     birdMesh.scale.set(birdMesh.scale.x * 0.2, birdMesh.scale.y * 0.2, birdMesh.scale.z * 0.2);
     birdMesh.position.y = 120;
