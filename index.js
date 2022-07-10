@@ -44,7 +44,7 @@ function main() {
   camera.add(listener);
   const sound = new THREE.Audio(listener);
   const audioLoader = new THREE.AudioLoader();
-  audioLoader.load('ocean.wav', function(buffer) {
+  audioLoader.load('https://amrelsherbiny.github.io/WebGL-Scene/ocean.wav', function(buffer) {
   	sound.setBuffer(buffer);
   	sound.setLoop(true);
   	sound.setVolume(0.5);
@@ -54,7 +54,7 @@ function main() {
   // Clouds part
   let cloudParticles = [];
   let cloudloader = new THREE.TextureLoader();
-  cloudloader.load("cloud10.png", function(texture){
+  cloudloader.load("https://amrelsherbiny.github.io/WebGL-Scene/cloud10.png", function(texture){
     let cloudGeo = new THREE.PlaneBufferGeometry(500,500);
     let cloudMaterial = new THREE.MeshBasicMaterial({
       color: 0x777777,
@@ -118,7 +118,7 @@ function main() {
   camera.add( listener2 );
   const sound2 = new THREE.PositionalAudio( listener2 );
   const audioLoader2 = new THREE.AudioLoader();
-  audioLoader2.load( 'thunder.wav', function( buffer ) {
+  audioLoader2.load( 'https://amrelsherbiny.github.io/WebGL-Scene/thunder.wav', function( buffer ) {
   	sound2.setBuffer( buffer );
   	sound2.setRefDistance( 500 );
     sound2.setLoop(true);
@@ -192,7 +192,7 @@ function main() {
   {
     textureWidth: 512,
     textureHeight: 512,
-    waterNormals: new THREE.TextureLoader().load( 'waternormals.jpg', function ( texture ) {
+    waterNormals: new THREE.TextureLoader().load( 'https://amrelsherbiny.github.io/WebGL-Scene/waternormals.jpg', function ( texture ) {
       texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
     } ),
     sunDirection: new THREE.Vector3(),
@@ -226,12 +226,12 @@ function main() {
 
   // Skybox part
   let materialArray = [];
-  let texture_ft = new THREE.TextureLoader().load('sky_ft.jpg');
-  let texture_bk = new THREE.TextureLoader().load('sky_bk.jpg');
-  let texture_up = new THREE.TextureLoader().load('sky_up.jpg');
-  let texture_dn = new THREE.TextureLoader().load('sky_dn.jpg');
-  let texture_rt = new THREE.TextureLoader().load('sky_rt.jpg');
-  let texture_lf = new THREE.TextureLoader().load('sky_lf.jpg');
+  let texture_ft = new THREE.TextureLoader().load('https://amrelsherbiny.github.io/WebGL-Scene/sky_ft.jpg');
+  let texture_bk = new THREE.TextureLoader().load('https://amrelsherbiny.github.io/WebGL-Scene/sky_bk.jpg');
+  let texture_up = new THREE.TextureLoader().load('https://amrelsherbiny.github.io/WebGL-Scene/sky_up.jpg');
+  let texture_dn = new THREE.TextureLoader().load('https://amrelsherbiny.github.io/WebGL-Scene/sky_dn.jpg');
+  let texture_rt = new THREE.TextureLoader().load('https://amrelsherbiny.github.io/WebGL-Scene/sky_rt.jpg');
+  let texture_lf = new THREE.TextureLoader().load('https://amrelsherbiny.github.io/WebGL-Scene/sky_lf.jpg');
   materialArray.push(new THREE.MeshBasicMaterial( { map: texture_ft }));
   materialArray.push(new THREE.MeshBasicMaterial( { map: texture_bk }));
   materialArray.push(new THREE.MeshBasicMaterial( { map: texture_up }));
@@ -248,7 +248,7 @@ function main() {
   camera.add(listener3);
   const sound3 = new THREE.PositionalAudio(listener3);
   const audioLoader3 = new THREE.AudioLoader();
-  audioLoader3.load('boat.wav', function(buffer) {
+  audioLoader3.load('https://amrelsherbiny.github.io/WebGL-Scene/boat.wav', function(buffer) {
   	sound3.setBuffer(buffer);
   	sound3.setRefDistance(2500);
     sound3.setLoop(true);
@@ -259,7 +259,7 @@ function main() {
   // Object model - "boat.glb"
   let boat = [];
   const loader = new GLTFLoader();
-  loader.load('boat.glb',(gltf)=>{
+  loader.load('https://amrelsherbiny.github.io/WebGL-Scene/boat.glb',(gltf)=>{
     const boatMesh = gltf.scene.children.find((child) => child.name === "Boat");
     boatMesh.scale.set(boatMesh.scale.x * 40, boatMesh.scale.y * 40, boatMesh.scale.z * 40);
     boatMesh.position.y = -8;
@@ -276,7 +276,7 @@ function main() {
 
   // Object model - "lighthouse.glb"
   const loader2 = new GLTFLoader();
-  loader2.load('lighthouse.glb',(gltf)=>{
+  loader2.load('https://amrelsherbiny.github.io/WebGL-Scene/three.js/lighthouse.glb',(gltf)=>{
     gltf.scene.children.forEach(c => {
       c.position.set(c.position.x * 12, c.position.y * 12, c.position.z * 12);
       c.scale.set(c.scale.x * 12, c.scale.y * 12, c.scale.z * 12);
@@ -296,7 +296,7 @@ function main() {
   camera.add(listener4);
   const sound4 = new THREE.PositionalAudio(listener4);
   const audioLoader4 = new THREE.AudioLoader();
-  audioLoader4.load('parrot.wav', function(buffer) {
+  audioLoader4.load('https://amrelsherbiny.github.io/WebGL-Scene/parrot.wav', function(buffer) {
   	sound4.setBuffer(buffer);
   	sound4.setRefDistance(25);
     sound4.setLoop(true);
@@ -307,7 +307,7 @@ function main() {
   let mixer;
   let bird = [];
   const loader3 = new GLTFLoader();
-  loader3.load('parrot.glb',(gltf)=>{
+  loader3.load('https://amrelsherbiny.github.io/WebGL-Scene/three.js/parrot.glb',(gltf)=>{
     const birdMesh = gltf.scene.children.find((child) => child.name === "mesh_0");
     birdMesh.scale.set(birdMesh.scale.x * 0.2, birdMesh.scale.y * 0.2, birdMesh.scale.z * 0.2);
     birdMesh.position.y = 120;
