@@ -61,7 +61,7 @@ import {
   Vector3,
   VectorKeyframeTrack,
   sRGBEncoding
-} from "/three.js";
+} from "https://amrelsherbiny.github.io/WebGL-Scene/three.js";
 //"/-/three@v0.129.0-chk6X8RSBl37CcZQlxof/dist=es2020,mode=imports/optimized/three.js";
 class GLTFLoader extends Loader {
   constructor(manager) {
