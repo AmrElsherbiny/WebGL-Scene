@@ -4,10 +4,10 @@ import { GLTFLoader } from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/l
 import { Water } from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/objects/Water.js';*/
 
 // Modules part
-import * as THREE from '/three.js';
-import { OrbitControls } from '/OrbitControls.js';
-import { GLTFLoader } from '/GLTFLoader.js';
-import { Water } from '/Water.js';
+import * as THREE from 'https://amrelsherbiny.github.io/WebGL-Scene/three.js';
+import { OrbitControls } from 'https://amrelsherbiny.github.io/WebGL-Scene/OrbitControls.js';
+import { GLTFLoader } from 'https://amrelsherbiny.github.io/WebGL-Scene/GLTFLoader.js';
+import { Water } from 'https://amrelsherbiny.github.io/WebGL-Scene/Water.js';
 
 function main() {
 
